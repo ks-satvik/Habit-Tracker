@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>Daily Habit Tracker</title>
 
@@ -11,19 +14,30 @@
 
 <body>
     <main class="app-container">
-        <header>
-            <p class="eyebrow">BUILD BETTER ROUTINES</p>
-            <h1>Daily Habit Tracker</h1>
-            <p class="subtitle">
-                Add your habits and track what you complete today.
-            </p>
+        <header class="app-header">
+            <div>
+                <p class="eyebrow">BUILD BETTER ROUTINES</p>
+                <h1>Daily Habit Tracker</h1>
+                <p class="subtitle">
+                    Track your daily habits and build consistent streaks.
+                </p>
+            </div>
+
+            <button
+                id="theme-toggle"
+                class="theme-toggle"
+                type="button"
+                aria-label="Switch to dark mode"
+            >
+                <span id="theme-icon">🌙</span>
+            </button>
         </header>
 
         <form id="habit-form" class="habit-form">
             <input
                 id="habit-input"
                 type="text"
-                placeholder="Enter a habit..."
+                placeholder="Enter a new habit..."
                 maxlength="50"
                 autocomplete="off"
                 required
@@ -33,12 +47,19 @@
         </form>
 
         <section class="progress-section">
-            <div>
+            <div class="progress-header">
                 <span>Today's progress</span>
                 <strong id="progress-text">0 of 0 completed</strong>
             </div>
 
-            <div class="progress-bar">
+            <div
+                class="progress-bar"
+                role="progressbar"
+                aria-label="Habit completion progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+            >
                 <div id="progress-fill" class="progress-fill"></div>
             </div>
         </section>
