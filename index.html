@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Daily Habit Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="app-container">
+        <header>
+            <p class="eyebrow">BUILD BETTER ROUTINES</p>
+            <h1>Daily Habit Tracker</h1>
+            <p class="subtitle">
+                Add your habits and track what you complete today.
+            </p>
+        </header>
+
+        <form id="habit-form" class="habit-form">
+            <input
+                id="habit-input"
+                type="text"
+                placeholder="Enter a habit..."
+                maxlength="50"
+                autocomplete="off"
+                required
+            >
+
+            <button type="submit">Add Habit</button>
+        </form>
+
+        <section class="progress-section">
+            <div>
+                <span>Today's progress</span>
+                <strong id="progress-text">0 of 0 completed</strong>
+            </div>
+
+            <div class="progress-bar">
+                <div id="progress-fill" class="progress-fill"></div>
+            </div>
+        </section>
+
+        <ul id="habit-list" class="habit-list"></ul>
+
+        <p id="empty-message" class="empty-message">
+            No habits added yet. Add your first habit above.
+        </p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
