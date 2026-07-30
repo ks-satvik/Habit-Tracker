@@ -19,7 +19,7 @@ A responsive habit-tracking web application built with HTML, CSS, and JavaScript
 - HTML
 - CSS
 - JavaScript
-- Browser Local Storage
+
 
 ## Running the Project
 
