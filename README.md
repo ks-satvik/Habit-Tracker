@@ -1,4 +1,4 @@
-# Daily Habit Tracker
+# Daily Personal Habit Tracker
 
 A responsive habit-tracking web application built with HTML, CSS, and JavaScript.
 
